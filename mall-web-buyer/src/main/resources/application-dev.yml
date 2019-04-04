@@ -10,15 +10,16 @@ spring:
     password: b2btest
   redis:
     database: 10
-    host: 192.168.1.199 # Redis
-    port: 7001 # Redis
+    host: 192.168.1.199
+    port: 7001
     password: cjs7001Aabc # Redis密码
-    jedis.pool.max-active: 8 # ���ӳ������������ʹ�ø�ֵ��ʾû�����ƣ�
-    jedis.pool.max-wait: -1 # ���ӳ���������ȴ�ʱ�䣨ʹ�ø�ֵ��ʾû�����ƣ�
-    jedis.pool.max-idle: 8 # ���ӳ��е�����������
-    jedis.pool.min-idle: 0 # ���ӳ��е���С��������
-    timeout: 1000 # ���ӳ�ʱʱ�䣨���룩
-
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 1000
 
 outinterface:
   scm: http://192.168.1.208:9019
