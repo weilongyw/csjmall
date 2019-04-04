@@ -1,8 +1,7 @@
 package com.csj.framework.mall.controller;
 
 
-import com.csj.framework.mall.common.Constant;
-import com.csj.framework.mall.common.response.BaseResponse;
+import com.csj.framework.common.response.BaseResponse;
 import com.csj.framework.mall.service.SmsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -11,9 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 /**
  * 短信

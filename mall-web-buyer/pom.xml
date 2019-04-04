@@ -11,7 +11,7 @@
     <groupId>com.csj.framework</groupId>
     <artifactId>mall-web-buyer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>web</name>
+    <name>web-buyer</name>
     <description>Web project for Spring Boot</description>
     <packaging>jar</packaging>
 
@@ -39,7 +39,7 @@
         </dependency>
         <dependency>
             <groupId>com.csj.framework</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>csj-common</artifactId>
         </dependency>
 
 
@@ -108,7 +108,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.csj.framework.mall.MallBuyerApplication_Jar</mainClass>
+                    <mainClass>com.csj.framework.MallBuyerApplication_Jar</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -118,11 +118,11 @@
                     <source>8</source>
                     <target>8</target>
                     <encoding>UTF-8</encoding>
-                    <compilerArguments>
+                    <!--<compilerArguments>
                         <verbose/>
                         <bootclasspath>${env.JAVA_HOME}\jre\lib\rt.jar;${env.JAVA_HOME}\jre\lib\jce.jar
                         </bootclasspath>
-                    </compilerArguments>
+                    </compilerArguments>-->
                 </configuration>
             </plugin>
         </plugins>

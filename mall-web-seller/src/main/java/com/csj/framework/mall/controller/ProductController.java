@@ -1,7 +1,7 @@
 package com.csj.framework.mall.controller;
 
-import com.csj.framework.mall.common.response.BaseResponse;
-import com.csj.framework.mall.common.response.data.WorkPageData;
+import com.csj.framework.common.response.BaseResponse;
+import com.csj.framework.common.response.data.WorkPageData;
 import com.csj.framework.mall.entity.selfsupport.SsBrand;
 import com.csj.framework.mall.service.impl.selfsupport.SsProductService;
 import com.csj.framework.mall.vo.CategoryVO;

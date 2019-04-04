@@ -1,13 +1,13 @@
 package com.csj.framework.mall.service.impl.selfsupport;
 
 import com.alibaba.fastjson.JSONObject;
-import com.csj.framework.mall.common.response.BaseResponse;
-import com.csj.framework.mall.common.response.data.WorkPageData;
+import com.csj.framework.common.response.BaseResponse;
+import com.csj.framework.common.response.data.WorkPageData;
 import com.csj.framework.mall.entity.selfsupport.SsBrand;
-import com.csj.framework.mall.exception.BizException;
-import com.csj.framework.mall.exception.ErrorEnum;
-import com.csj.framework.mall.http.HttpRequest;
-import com.csj.framework.mall.properties.OutfaceUrlProperties;
+import com.csj.framework.exception.BizException;
+import com.csj.framework.exception.ErrorEnum;
+import com.csj.framework.http.HttpRequest;
+import com.csj.framework.properties.OutfaceUrlProperties;
 import com.csj.framework.mall.vo.CategoryVO;
 import com.csj.framework.mall.vo.SsStdSkuProductVO;
 import com.google.gson.Gson;

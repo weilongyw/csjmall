@@ -39,7 +39,7 @@
         </dependency>
         <dependency>
             <groupId>com.csj.framework</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>csj-common</artifactId>
         </dependency>
 
         <!--  web -->
@@ -114,7 +114,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.csj.framework.mall.MallSellerApplication_Jar</mainClass>
+                    <mainClass>com.csj.framework.MallSellerApplication_Jar</mainClass>
                 </configuration>
             </plugin>
             <plugin>

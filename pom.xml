@@ -47,7 +47,7 @@
         <module>mall-service-impl</module>
         <module>mall-model</module>
         <module>mall-dao</module>
-        <module>mall-common</module>
+        <module>csj-common</module>
     </modules>
 
 
@@ -76,7 +76,7 @@
             </dependency>
             <dependency>
                 <groupId>com.csj.framework</groupId>
-                <artifactId>mall-common</artifactId>
+                <artifactId>csj-common</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 

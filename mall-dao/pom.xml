@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>com.csj.framework</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>csj-common</artifactId>
             <scope>provided</scope>
         </dependency>
 

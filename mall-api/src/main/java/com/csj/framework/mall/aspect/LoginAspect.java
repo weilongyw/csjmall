@@ -1,9 +1,9 @@
 package com.csj.framework.mall.aspect;
 
 
-import com.csj.framework.mall.annotation.RequirePermission;
-import com.csj.framework.mall.exception.BizException;
-import com.csj.framework.mall.exception.ErrorEnum;
+import com.csj.framework.annotation.RequirePermission;
+import com.csj.framework.exception.BizException;
+import com.csj.framework.exception.ErrorEnum;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -26,7 +26,7 @@ public class LoginAspect {
     RedisTemplate redisTemplate;
 
 
-    @Pointcut(value = "@annotation( com.csj.framework.mall.annotation.RequirePermission)")
+    @Pointcut(value = "@annotation( com.csj.framework.annotation.RequirePermission)")
     public void loginAspect() {
     }
 
