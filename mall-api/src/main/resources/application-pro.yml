@@ -1,0 +1,42 @@
+mysqlbase:
+   host: 192.168.1.206
+   port: 3306
+   sid: csjmall
+spring:
+  datasource:
+    driver-class-name : com.mysql.jdbc.Driver
+    url: jdbc:mysql://${mysqlbase.host}:${mysqlbase.port}/${mysqlbase.sid}?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+    username : root
+    password : b2btest
+  redis :
+    database : 10
+    host : 192.168.1.199
+    port : 7001
+    password : cjs7001Aabc
+    jedis.pool.max-active : 8
+    jedis.pool.max-wait : -1
+    jedis.pool.max-idle : 8
+    jedis.pool.min-idle : 0
+    timeout : 1000
+
+outinterface:
+  scm: http://192.168.1.207:8082
+  tiger: http://192.168.1.204:7878
+  work: http://work.csjmro.com
+  wms: http://192.168.1.204:8787
+
+url:
+  categoryList: ${outinterface.work}/outerface/shopping/center/getCategorylist
+  productSkuList: ${outinterface.work}/outerface/shopping/center/querySkuProductList
+  brandList: ${outinterface.work}/outerface/shopping/center/queryBrandMasterListByClassId
+  entReg: ${outinterface.work}/outerface/enterprise/createHallEnterprise
+  entSearch: ${outinterface.work}/outerface/enterprise/queryHallEnterprise
+  createSaleOrder: ${outinterface.scm}/api/outface/scmForShop/createSaleOrder
+  searchSaleOrder: ${outinterface.scm}/api/outface/scmForShop/b2b/list
+  searchInvoice: ${outinterface.tiger}/api/getSalesInvoiceByBusiBillNo
+  searchOutplan: ${outinterface.tiger}/api/out/planSelect/queryOutPlanByBusiBillNo
+  search_payment: ${outinterface.tiger}/api/receive/list
+  search_out: ${outinterface.tiger}/api/out/order/byBusiBillNO
+  searchDelivery: ${outinterface.wms}/api/logistics/getLogisticsInfo
+
+

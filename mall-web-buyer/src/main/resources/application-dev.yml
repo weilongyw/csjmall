@@ -1,0 +1,42 @@
+mysqlbase:
+  host: 192.168.1.206
+  port: 3306
+  sid: malltest
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${mysqlbase.host}:${mysqlbase.port}/${mysqlbase.sid}?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+    username: b2btest
+    password: b2btest
+  redis:
+    database: 10
+    host: 192.168.1.199 # Redis
+    port: 7001 # Redis
+    password: cjs7001Aabc # Redis密码
+    jedis.pool.max-active: 8 # ���ӳ������������ʹ�ø�ֵ��ʾû�����ƣ�
+    jedis.pool.max-wait: -1 # ���ӳ���������ȴ�ʱ�䣨ʹ�ø�ֵ��ʾû�����ƣ�
+    jedis.pool.max-idle: 8 # ���ӳ��е�����������
+    jedis.pool.min-idle: 0 # ���ӳ��е���С��������
+    timeout: 1000 # ���ӳ�ʱʱ�䣨���룩
+
+
+outinterface:
+  scm: http://192.168.1.208:9019
+  tiger: http://192.168.1.37:7878
+  work: http://192.168.1.224:1010
+  wms: http://192.168.1.37:8787
+
+# ��Ʒ����
+url:
+  categoryList: ${outinterface.work}/outerface/shopping/center/getCategorylist
+  productSkuList: ${outinterface.work}/outerface/shopping/center/querySkuProductList
+  brandList: ${outinterface.work}/outerface/shopping/center/queryBrandMasterListByClassId
+  entReg: ${outinterface.work}/outerface/enterprise/createHallEnterprise
+  entSearch: ${outinterface.work}/outerface/enterprise/queryHallEnterprise
+  createSaleOrder: ${outinterface.scm}/api/outface/scmForShop/createSaleOrder
+  searchSaleOrder: ${outinterface.scm}/api/outface/scmForShop/b2b/list
+  searchInvoice: ${outinterface.tiger}/api/getSalesInvoiceByBusiBillNo
+  searchOutplan: ${outinterface.tiger}/api/out/planSelect/queryOutPlanByBusiBillNo
+  search_payment: ${outinterface.tiger}/api/receive/list
+  search_out: ${outinterface.tiger}/api/out/order/byBusiBillNO
+  searchDelivery: ${outinterface.wms}/api/logistics/getLogisticsInfo

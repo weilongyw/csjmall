@@ -1,0 +1,21 @@
+server:
+   port: 8089
+spring:
+    profiles:
+      active: @profiles.active@
+    mvc:
+      view:
+        prefix: /pages
+    devtools:
+      restart:
+        enabled: false
+        additional-paths: src/main/java
+        exclude: assets/**,pages/**
+
+#mybatis-plus
+mybatis-plus:
+  type-aliases-package: com.csj.framework.mall.entity
+  mapper-locations: classpath*:mapper/*.xml
+
+
+
