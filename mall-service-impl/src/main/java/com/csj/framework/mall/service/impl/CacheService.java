@@ -11,7 +11,7 @@ public class CacheService {
 
     private static String CACHE_NAME = "csj";
 
-    @Autowired
+    @Autowired(required = false)
     CacheManager cacheManager;
 
 

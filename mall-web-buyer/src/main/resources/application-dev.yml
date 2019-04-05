@@ -1,18 +1,18 @@
 mysqlbase:
-  host: 192.168.1.206
+  host: localhost
   port: 3306
-  sid: malltest
+  sid: mall_test
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://${mysqlbase.host}:${mysqlbase.port}/${mysqlbase.sid}?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
-    username: b2btest
-    password: b2btest
+    username: root
+    password: 123456
   redis:
     database: 10
-    host: 192.168.1.199
-    port: 7001
-    password: cjs7001Aabc # Redis密码
+    host: 127.0.0.1
+    port: 6379
+    password: 123456 # Redis密码
     jedis:
       pool:
         max-active: 8
