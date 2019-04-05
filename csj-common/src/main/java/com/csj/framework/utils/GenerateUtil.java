@@ -16,7 +16,7 @@ public class GenerateUtil {
 
     public static String AUTHOR = "yewei";
     public static String DRIVER = "com.mysql.jdbc.Driver";
-    public static String DB_URL = "jdbc:mysql://localhost:3306/malltest?useUnicode=true&useSSL=false&characterEncoding=utf8";
+    public static String DB_URL = "jdbc:mysql://localhost:3306/mall_test?useUnicode=true&useSSL=false&characterEncoding=utf8";
     public static String DB_USER_NAME = "root";
     public static String DB_PASSWORD = "123456";
 
