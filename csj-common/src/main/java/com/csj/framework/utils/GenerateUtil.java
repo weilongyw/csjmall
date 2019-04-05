@@ -21,7 +21,7 @@ public class GenerateUtil {
     public static String DB_PASSWORD = "123456";
 
     public static String PARENT_PACKAGE = "com.csj.framework.mall";
-    public static String PATH_CONTROLLER = "/mall-web-seller/src/main/java/com/csj/framework/mall/controller/";
+    public static String PATH_CONTROLLER = "/mall-web-buyer/src/main/java/com/csj/framework/mall/controller/";
     public static String PATH_SERVICE = "/mall-service/src/main/java/com/csj/framework/mall/service/";
     public static String PATH_SERVICE_IMPL = "/mall-service-impl/src/main/java/com/csj/framework/mall/service/impl/";
     public static String PATH_DAO = "/mall-dao/src/main/java/com/csj/framework/mall/mapper/";
