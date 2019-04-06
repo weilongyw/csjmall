@@ -8,15 +8,13 @@ import java.lang.reflect.Type;
 @Data
 public abstract class CacheLoadable<T> {
 
-    private Type type;
+    protected Type type;
 
     public CacheLoadable() {
         this.type = getClass().getGenericSuperclass();
     }
 
     protected abstract T load();
-
-
 
 
 }
