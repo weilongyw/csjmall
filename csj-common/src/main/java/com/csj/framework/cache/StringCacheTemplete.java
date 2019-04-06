@@ -36,17 +36,16 @@ public class StringCacheTemplete {
 
     public <T> T getCacheData(String key, long expire, TimeUnit timeUnit, CacheLoadable<T> cacheLoadable) {
 
-        cacheLoadable.getEntityClass().getGenericSuperclass();
         String jsonData = stringRedisTemplate.opsForValue().get(key);
         if (jsonData != null) {
             log.info("========================从redis获取数据=============================");
-            return JSONObject.parseObject(jsonData, cacheLoadable.getEntityClass());
+            return JSONObject.parseObject(jsonData, cacheLoadable.getType());
         }
         synchronized (this) {
             jsonData = stringRedisTemplate.opsForValue().get(key);
             if (jsonData != null) {
                 log.info("========================从redis获取数据=============================");
-                return JSONObject.parseObject(jsonData, cacheLoadable.getEntityClass());
+                return JSONObject.parseObject(jsonData, cacheLoadable.getType());
             }
             log.info("========================从数据库获取数据=============================");
             T result = cacheLoadable.load();
