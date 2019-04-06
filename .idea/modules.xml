@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/csj-common/csj-common.iml" filepath="$PROJECT_DIR$/csj-common/csj-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-api/mall-api.iml" filepath="$PROJECT_DIR$/mall-api/mall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-dao/mall-dao.iml" filepath="$PROJECT_DIR$/mall-dao/mall-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-model/mall-model.iml" filepath="$PROJECT_DIR$/mall-model/mall-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-service/mall-service.iml" filepath="$PROJECT_DIR$/mall-service/mall-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-service-impl/mall-service-impl.iml" filepath="$PROJECT_DIR$/mall-service-impl/mall-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-web-buyer/mall-web-buyer.iml" filepath="$PROJECT_DIR$/mall-web-buyer/mall-web-buyer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-web-seller/mall-web-seller.iml" filepath="$PROJECT_DIR$/mall-web-seller/mall-web-seller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="csj-common" />
+        <module name="mall-api" />
+        <module name="mall-dao" />
+        <module name="mall-model" />
+        <module name="mall-service" />
+        <module name="mall-service-impl" />
+        <module name="mall-web-buyer" />
+        <module name="mall-web-seller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-service" target="1.8" />
+      <module name="csj-common" target="1.8" />
+      <module name="mall-api" target="8" />
+      <module name="mall-dao" target="1.8" />
+      <module name="mall-model" target="1.8" />
+      <module name="mall-service" target="1.8" />
+      <module name="mall-service-impl" target="1.8" />
+      <module name="mall-web-buyer" target="8" />
+      <module name="mall-web-seller" target="1.8" />
+      <module name="parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

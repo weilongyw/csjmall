@@ -29,7 +29,7 @@ public class BuyerApplicationTests {
         ExecutorService executorService = Executors.newFixedThreadPool(20);
         for (int i = 0; i < 20; i++) {
             executorService.execute(() -> {
-                iSysUserService.cacheUser("1");
+                iSysUserService.cacheUser("2");
                 countDownLatch.countDown();
             });
         }

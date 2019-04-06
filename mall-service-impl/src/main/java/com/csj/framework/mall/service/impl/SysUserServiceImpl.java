@@ -38,19 +38,21 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
             return JSONObject.parseObject(jsonData, new TypeReference<SysUser>() {
             });
         }
-        log.info("==================从数据库获取数据=====================");
-        synchronized (this) {
+       /* synchronized (this) {
             jsonData = stringRedisTemplate.opsForValue().get(id);
             if (jsonData != null) {
                 log.info("==================从redis获取数据=====================");
                 return JSONObject.parseObject(jsonData, new TypeReference<SysUser>() {
                 });
             }
+            log.info("==================从数据库获取数据=====================");
             SysUser sysUser = this.getById(id);
-            if (sysUser != null) {
-                stringRedisTemplate.opsForValue().set(id, JSON.toJSONString(sysUser), 1, TimeUnit.MINUTES);
-            }
+            stringRedisTemplate.opsForValue().set(id, JSON.toJSONString(sysUser), 1, TimeUnit.MINUTES);
             return sysUser;
-        }
+        }*/
+        log.info("==================从数据库获取数据=====================");
+        SysUser sysUser = this.getById(id);
+        stringRedisTemplate.opsForValue().set(id, JSON.toJSONString(sysUser), 1, TimeUnit.MINUTES);
+        return sysUser;
     }
 }
